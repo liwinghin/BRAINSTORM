@@ -425,6 +425,8 @@
 "Assets/Scripts/LunchTime/UIManager.cs"
 "Assets/Scripts/NetworkTest/NetworkUI.cs"
 "Assets/Scripts/NetworkTest/PlayerMovement.cs"
+"Assets/Scripts/PathFinding/MapGenerator.cs"
+"Assets/Scripts/PathFinding/TileHighlighter.cs"
 "Assets/Scripts/PlayerConfig/PlayerConfigDataList.cs"
 "Assets/Scripts/PlayerConfig/PlayerConfigManager.cs"
 "Assets/Scripts/RTS/BaseUnit.cs"

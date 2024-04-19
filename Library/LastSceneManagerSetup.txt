@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/LunchTime.unity
+- path: Assets/Scenes/PathFinding.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -103,11 +103,13 @@
     <Compile Include="Assets\Scripts\Calender\Old\Calendar.cs" />
     <Compile Include="Assets\Scripts\Execise\IBankAccount.cs" />
     <Compile Include="Assets\Scripts\NetworkTest\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\PathFinding\MapGenerator.cs" />
     <Compile Include="Assets\Scripts\Execise\HSBCBank.cs" />
     <Compile Include="Assets\Scripts\Calender\Old\DayToggle.cs" />
     <Compile Include="Assets\Scripts\Calender\Old\DayInfoUI.cs" />
     <Compile Include="Assets\Scripts\GridSystem\Block.cs" />
     <Compile Include="Assets\Scripts\RTS\PoolManager.cs" />
+    <Compile Include="Assets\Scripts\PathFinding\TileHighlighter.cs" />
     <Compile Include="Assets\Scripts\Calender\New\UIManager.cs" />
     <Compile Include="Assets\Scripts\GridSystem\GridManager.cs" />
     <Compile Include="Assets\Scripts\Game\Player\CameraShake.cs" />
