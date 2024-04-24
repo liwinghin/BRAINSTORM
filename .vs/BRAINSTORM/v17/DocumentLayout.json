@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\RiU2\\Documents\\GitHub\\BRAINSTORM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2BECEE30-5067-541D-D9B7-8BA3533CC29F}|Assembly-CSharp.csproj|C:\\Users\\RiU2\\Documents\\GitHub\\BRAINSTORM\\assets\\scripts\\pathfinding\\mapgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BECEE30-5067-541D-D9B7-8BA3533CC29F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pathfinding\\mapgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2BECEE30-5067-541D-D9B7-8BA3533CC29F}|Assembly-CSharp.csproj|C:\\Users\\RiU2\\Documents\\GitHub\\BRAINSTORM\\assets\\scripts\\pathfinding\\pathfindingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BECEE30-5067-541D-D9B7-8BA3533CC29F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pathfinding\\pathfindingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BECEE30-5067-541D-D9B7-8BA3533CC29F}|Assembly-CSharp.csproj|C:\\Users\\RiU2\\Documents\\GitHub\\BRAINSTORM\\assets\\scripts\\pathfinding\\jumppointsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BECEE30-5067-541D-D9B7-8BA3533CC29F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pathfinding\\jumppointsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2BECEE30-5067-541D-D9B7-8BA3533CC29F}|Assembly-CSharp.csproj|C:\\Users\\RiU2\\Documents\\GitHub\\BRAINSTORM\\assets\\scripts\\pathfinding\\tilehighlighter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BECEE30-5067-541D-D9B7-8BA3533CC29F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pathfinding\\tilehighlighter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BECEE30-5067-541D-D9B7-8BA3533CC29F}|Assembly-CSharp.csproj|c:\\users\\riu2\\documents\\github\\brainstorm\\assets\\scripts\\pathfinding\\astar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BECEE30-5067-541D-D9B7-8BA3533CC29F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pathfinding\\astar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BECEE30-5067-541D-D9B7-8BA3533CC29F}|Assembly-CSharp.csproj|C:\\Users\\RiU2\\Documents\\GitHub\\BRAINSTORM\\assets\\scripts\\pathfinding\\mapgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BECEE30-5067-541D-D9B7-8BA3533CC29F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pathfinding\\mapgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BECEE30-5067-541D-D9B7-8BA3533CC29F}|Assembly-CSharp.csproj|c:\\users\\riu2\\documents\\github\\brainstorm\\assets\\scripts\\pathfinding\\jumppointsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BECEE30-5067-541D-D9B7-8BA3533CC29F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pathfinding\\jumppointsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BECEE30-5067-541D-D9B7-8BA3533CC29F}|Assembly-CSharp.csproj|c:\\users\\riu2\\documents\\github\\brainstorm\\assets\\scripts\\pathfinding\\tileassetdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BECEE30-5067-541D-D9B7-8BA3533CC29F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pathfinding\\tileassetdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BECEE30-5067-541D-D9B7-8BA3533CC29F}|Assembly-CSharp.csproj|c:\\users\\riu2\\documents\\github\\brainstorm\\assets\\scripts\\pathfinding\\tileassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BECEE30-5067-541D-D9B7-8BA3533CC29F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pathfinding\\tileassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BECEE30-5067-541D-D9B7-8BA3533CC29F}|Assembly-CSharp.csproj|C:\\Users\\RiU2\\Documents\\GitHub\\BRAINSTORM\\assets\\scripts\\pathfinding\\astar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BECEE30-5067-541D-D9B7-8BA3533CC29F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pathfinding\\astar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,43 +38,82 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PathFindingManager.cs",
+              "DocumentMoniker": "C:\\Users\\RiU2\\Documents\\GitHub\\BRAINSTORM\\Assets\\Scripts\\PathFinding\\PathFindingManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PathFinding\\PathFindingManager.cs",
+              "ToolTip": "C:\\Users\\RiU2\\Documents\\GitHub\\BRAINSTORM\\Assets\\Scripts\\PathFinding\\PathFindingManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PathFinding\\PathFindingManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T02:58:10.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "TileAssetData.cs",
+              "DocumentMoniker": "C:\\Users\\RiU2\\Documents\\GitHub\\BRAINSTORM\\Assets\\Scripts\\PathFinding\\TileAssetData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PathFinding\\TileAssetData.cs",
+              "ToolTip": "C:\\Users\\RiU2\\Documents\\GitHub\\BRAINSTORM\\Assets\\Scripts\\PathFinding\\TileAssetData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PathFinding\\TileAssetData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T04:14:42.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TileAssets.cs",
+              "DocumentMoniker": "C:\\Users\\RiU2\\Documents\\GitHub\\BRAINSTORM\\Assets\\Scripts\\PathFinding\\TileAssets.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PathFinding\\TileAssets.cs",
+              "ToolTip": "C:\\Users\\RiU2\\Documents\\GitHub\\BRAINSTORM\\Assets\\Scripts\\PathFinding\\TileAssets.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PathFinding\\TileAssets.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T04:13:48.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "JumpPointSearch.cs",
               "DocumentMoniker": "C:\\Users\\RiU2\\Documents\\GitHub\\BRAINSTORM\\Assets\\Scripts\\PathFinding\\JumpPointSearch.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PathFinding\\JumpPointSearch.cs",
               "ToolTip": "C:\\Users\\RiU2\\Documents\\GitHub\\BRAINSTORM\\Assets\\Scripts\\PathFinding\\JumpPointSearch.cs",
               "RelativeToolTip": "Assets\\Scripts\\PathFinding\\JumpPointSearch.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAH4AAAAAAAAA",
+              "ViewState": "AQIAACIAAAAAAAAAAAAAwEYAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-22T08:43:21.64Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "AStar.cs",
               "DocumentMoniker": "C:\\Users\\RiU2\\Documents\\GitHub\\BRAINSTORM\\Assets\\Scripts\\PathFinding\\AStar.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PathFinding\\AStar.cs",
               "ToolTip": "C:\\Users\\RiU2\\Documents\\GitHub\\BRAINSTORM\\Assets\\Scripts\\PathFinding\\AStar.cs",
               "RelativeToolTip": "Assets\\Scripts\\PathFinding\\AStar.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAtwGoAAAAAAAAA",
+              "ViewState": "AQIAAHkAAAAAAAAAAAD4v5wAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-22T08:02:14.275Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "MapGenerator.cs",
               "DocumentMoniker": "C:\\Users\\RiU2\\Documents\\GitHub\\BRAINSTORM\\Assets\\Scripts\\PathFinding\\MapGenerator.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PathFinding\\MapGenerator.cs",
               "ToolTip": "C:\\Users\\RiU2\\Documents\\GitHub\\BRAINSTORM\\Assets\\Scripts\\PathFinding\\MapGenerator.cs",
               "RelativeToolTip": "Assets\\Scripts\\PathFinding\\MapGenerator.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAAADkAAAAiAAAA",
+              "ViewState": "AQIAAEEAAAAAAAAAAAApwFsAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-19T04:50:31.406Z",
               "EditorCaption": ""
@@ -79,33 +126,10 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\PathFinding\\TileHighlighter.cs",
               "ToolTip": "C:\\Users\\RiU2\\Documents\\GitHub\\BRAINSTORM\\Assets\\Scripts\\PathFinding\\TileHighlighter.cs",
               "RelativeToolTip": "Assets\\Scripts\\PathFinding\\TileHighlighter.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAArAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBsAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-19T05:09:23.159Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PathFindingManager.cs",
-              "DocumentMoniker": "C:\\Users\\RiU2\\Documents\\GitHub\\BRAINSTORM\\Assets\\Scripts\\PathFinding\\PathFindingManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PathFinding\\PathFindingManager.cs",
-              "ToolTip": "C:\\Users\\RiU2\\Documents\\GitHub\\BRAINSTORM\\Assets\\Scripts\\PathFinding\\PathFindingManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PathFinding\\PathFindingManager.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAwDoAAABXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T02:58:10.495Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 38,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
             }
           ]
         }

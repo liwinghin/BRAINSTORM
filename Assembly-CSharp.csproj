@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\Calender\New\ToggleA.cs" />
     <Compile Include="Assets\Scripts\Game\System\ObjectPoolManager.cs" />
     <Compile Include="Assets\Scripts\RTS\UnitPool.cs" />
+    <Compile Include="Assets\Scripts\PathFinding\TileAssets.cs" />
     <Compile Include="Assets\Scripts\Game\Player\HPSystem.cs" />
     <Compile Include="Assets\Scripts\Game\Enemy\EnemyPool.cs" />
     <Compile Include="Assets\Scripts\Game\Enemy\Enemy.cs" />
@@ -70,6 +71,7 @@
     <Compile Include="Assets\Scripts\Game\System\GameStateManager.cs" />
     <Compile Include="Assets\Scripts\Execise\Dog.cs" />
     <Compile Include="Assets\Scripts\YUGIOH\PlacementSystem.cs" />
+    <Compile Include="Assets\Scripts\PathFinding\TileAssetData.cs" />
     <Compile Include="Assets\Scripts\PathFinding\AStar.cs" />
     <Compile Include="Assets\Scripts\PathFinding\JumpPointSearch.cs" />
     <Compile Include="Assets\Scripts\PathFinding\PathFindingManager.cs" />

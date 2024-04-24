@@ -124,7 +124,6 @@ namespace PathFinding
 
         private static bool IsWalkable(MapGenerator mapGenerator, Coordinate node)
         {
-
             return mapGenerator.IsTileWalkable(node);
         }
     }

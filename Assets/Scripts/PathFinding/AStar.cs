@@ -154,10 +154,7 @@ namespace PathFinding
 
         private static bool IsWalkable(MapGenerator mapGenerator, Coordinate node)
         {
-            // Implement logic to check if the node is walkable on your map
-            // For example, you can check if the coordinate is within bounds and not blocked by an obstacle
-            // This will depend on how you've set up your map generation and tile properties
-            return true; // Placeholder implementation
+            return mapGenerator.IsTileWalkable(node);
         }
     }
 }

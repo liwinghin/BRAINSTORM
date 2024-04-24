@@ -2,7 +2,7 @@
 using UnityEngine.Tilemaps;
 using UniRx;
 using System.Collections.Generic;
-using System.Diagnostics;
+using System.Linq;
 
 namespace PathFinding
 {
@@ -12,8 +12,6 @@ namespace PathFinding
         [SerializeField] MapGenerator mapGenerator;
 
         [SerializeField] Tilemap tilemap;
-        [SerializeField] TileBase pointTile;
-        [SerializeField] TileBase pathTile;
 
         [SerializeField] private ReactiveProperty<Coordinate> startPoint = new(Default.Coordinate);
         [SerializeField] private ReactiveProperty<Coordinate> endPoint = new(Default.Coordinate);
@@ -29,16 +27,25 @@ namespace PathFinding
                 .Subscribe(tilePosition => SetPoint(tilePosition))
                 .AddTo(this);
 
-            endPoint
-                .Where(s => !s.Equals(Default.Coordinate))
+            endPoint            
+                .SkipLatestValueOnSubscribe()
                 .Subscribe(_ => DoPathFinding())
                 .AddTo(this);
         }
         private void DoPathFinding()
         {
-            path.Clear();
-            path = JumpPointSearch.FindPath(mapGenerator, startPoint.Value, endPoint.Value);
-            VisualizePath();
+            if (!endPoint.Value.Equals(Default.Coordinate))
+            {
+                path = JumpPointSearch.FindPath(mapGenerator, startPoint.Value, endPoint.Value);
+                path.RemoveAt(path.Count - 1);
+                VisualizePath(TileAsset.pathTile);
+            }
+            else
+            {
+                VisualizePath(TileAsset.defaultTile);
+                path.Clear();
+            }
+
 
             //Compare two Path Finding method
             //Stopwatch astarStopwatch = Stopwatch.StartNew();
@@ -52,26 +59,19 @@ namespace PathFinding
             //UnityEngine.Debug.Log($"Jump Point Search Algorithm Time: {jpsStopwatch.ElapsedMilliseconds} ms");
 
         }
-        void VisualizePath()
+        void VisualizePath(TileBase pathTile)
         {
-            foreach (Coordinate coordinate in path)
-            {
-                tilemap.SetTile(new Vector3Int(coordinate.x, coordinate.y, 0), pathTile);
-            }
+            path.Select(coordinate => new Vector3Int(coordinate.x, coordinate.y, 0))
+                .ToList()
+                .ForEach(pos => tilemap.SetTile(pos, pathTile));
         }
 
         public void SetPoint(Vector3Int pos)
         {
             bool isSelected = mapGenerator.MarkUpCoordinates(pos, ref startPoint, ref endPoint);
-            if (isSelected)
-            {
-                tilemap.SetTile(pos + Default.offset, pointTile);
-            }
-            else
-            {
-                tilemap.SetTile(pos + Default.offset, null);
-            }
+            tilemap.SetTile(pos + Default.offset, isSelected ? TileAsset.pointTile : null);
         }
+
         Vector3Int GetClickedTilePosition()
         {
             return tileHighlighter.CurrentHoveredTilePos;

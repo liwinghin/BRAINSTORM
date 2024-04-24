@@ -429,6 +429,8 @@
 "Assets/Scripts/PathFinding/JumpPointSearch.cs"
 "Assets/Scripts/PathFinding/MapGenerator.cs"
 "Assets/Scripts/PathFinding/PathFindingManager.cs"
+"Assets/Scripts/PathFinding/TileAssetData.cs"
+"Assets/Scripts/PathFinding/TileAssets.cs"
 "Assets/Scripts/PathFinding/TileHighlighter.cs"
 "Assets/Scripts/PlayerConfig/PlayerConfigDataList.cs"
 "Assets/Scripts/PlayerConfig/PlayerConfigManager.cs"

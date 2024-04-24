@@ -9,32 +9,30 @@ namespace PathFinding
     {
         [SerializeField] MapGenerator mapGenerator;
         [SerializeField] Tilemap tilemap;
-        [SerializeField] TileBase defaultTile;
-        [SerializeField] TileBase hoverTile;
 
-        [SerializeField] ReactiveProperty<Vector3Int> hoveredTilePosition = new ReactiveProperty<Vector3Int>(new Vector3Int(-1, -1, -1));
-        public Vector3Int CurrentHoveredTilePos => hoveredTilePosition.Value;
+        [SerializeField] ReactiveProperty<Vector3Int> highlightedTilePosition = new ReactiveProperty<Vector3Int>(new Vector3Int(-1, -1, -1));
+        public Vector3Int CurrentHoveredTilePos => highlightedTilePosition.Value;
 
         void Start()
         {
-            hoveredTilePosition
+            highlightedTilePosition
                 .Pairwise()
                 .Subscribe(pair =>
                 {
-                    SetTile(pair.Previous, defaultTile);
-                    SetTile(pair.Current, hoverTile);
+                    SetTile(pair.Previous, TileAsset.defaultTile);
+                    SetTile(pair.Current, TileAsset.highLightTile);
                 })
                 .AddTo(this);
 
             Observable.EveryUpdate()
-                .Select(_ => GetHoveredTilePosition())
-                .Where(c => mapGenerator.IsValidTile(c))
+                .Select(_ => GetHighlightedTilePosition())
                 .DistinctUntilChanged()
-                .Subscribe(tilePosition => hoveredTilePosition.Value = tilePosition)
+                .Where(c => mapGenerator.IsValidTile(c))
+                .Subscribe(pos => SetPosition(pos))
                 .AddTo(this);
         }
 
-        Vector3Int GetHoveredTilePosition()
+        Vector3Int GetHighlightedTilePosition()
         {
             RaycastHit2D hit = Physics2D.GetRayIntersection(Camera.main.ScreenPointToRay(Input.mousePosition));
             if (hit.collider != null && hit.collider.gameObject.CompareTag("Tile"))
@@ -45,6 +43,16 @@ namespace PathFinding
             {
                 return Default.Vector3Int;
             }
+        }
+
+        void SetPosition(Vector3Int pos)
+        {
+            TileBase tile = tilemap.GetTile(pos);
+
+            if (tile != TileAsset.defaultTile)
+                return;
+
+            highlightedTilePosition.Value = pos;
         }
 
         void SetTile(Vector3Int tilePosition, TileBase tile)

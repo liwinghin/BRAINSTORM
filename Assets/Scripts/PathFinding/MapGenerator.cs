@@ -48,7 +48,6 @@ namespace PathFinding
         }
 
         [SerializeField] Tilemap tilemap;
-        [SerializeField] TileBase[] tiles;
 
         [SerializeField] int width = 6;
         [SerializeField] int height = 6;
@@ -57,6 +56,10 @@ namespace PathFinding
 
         float walkableChance = 0.9f;
 
+        private void Awake()
+        {
+            TileAsset.Init();
+        }
         void Start()
         {
             GenerateMap();
@@ -75,7 +78,7 @@ namespace PathFinding
 
                     bool isWalkable = Random.value < walkableChance;
                     tileInfoList.Add(new TileInfo(tilePosition, coordinate, false, isWalkable));
-                    TileBase tile = isWalkable? tiles[0] : tiles[1];
+                    TileBase tile = isWalkable? TileAsset.defaultTile : TileAsset.disableTile;
                     tilemap.SetTile(tilePosition, tile);
 
                     GameObject tileGameObject = new GameObject("TileCollider");
