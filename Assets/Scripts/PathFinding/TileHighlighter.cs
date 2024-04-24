@@ -7,15 +7,13 @@ namespace PathFinding
 {
     public class TileHighlighter : MonoBehaviour
     {
-        public Tilemap tilemap;
-
-        [SerializeField] Vector3Int offset = new Vector3Int(1, 1, -1);
-
+        [SerializeField] MapGenerator mapGenerator;
+        [SerializeField] Tilemap tilemap;
         [SerializeField] TileBase defaultTile;
         [SerializeField] TileBase hoverTile;
-        [SerializeField] TileBase pointTile;
 
         [SerializeField] ReactiveProperty<Vector3Int> hoveredTilePosition = new ReactiveProperty<Vector3Int>(new Vector3Int(-1, -1, -1));
+        public Vector3Int CurrentHoveredTilePos => hoveredTilePosition.Value;
 
         void Start()
         {
@@ -30,15 +28,9 @@ namespace PathFinding
 
             Observable.EveryUpdate()
                 .Select(_ => GetHoveredTilePosition())
+                .Where(c => mapGenerator.IsValidTile(c))
                 .DistinctUntilChanged()
                 .Subscribe(tilePosition => hoveredTilePosition.Value = tilePosition)
-                .AddTo(this);
-
-            Observable.EveryUpdate()
-                .Where(_ => Input.GetMouseButtonDown(0)) // 检测鼠标左键点击
-                .Select(_ => GetClickedTilePosition())
-                .Where(tilePosition => IsValidTilePosition(tilePosition))
-                .Subscribe(tilePosition => tilemap.SetTile(tilePosition + offset, pointTile))
                 .AddTo(this);
         }
 
@@ -51,25 +43,16 @@ namespace PathFinding
             }
             else
             {
-                return new Vector3Int(-1, -1, -1);
+                return Default.Vector3Int;
             }
         }
 
         void SetTile(Vector3Int tilePosition, TileBase tile)
         {
-            if (tilePosition.x >= 0 && tilePosition.y >= 0 && tilePosition.z >= 0)
+            if (tilePosition != Default.Vector3Int)
             {
                 tilemap.SetTile(tilePosition, tile);
             }
-        }
-        Vector3Int GetClickedTilePosition()
-        {
-            return hoveredTilePosition.Value;
-        }
-
-        bool IsValidTilePosition(Vector3Int tilePosition)
-        {
-            return tilePosition.x >= 0 && tilePosition.y >= 0 && tilePosition.z >= 0;
         }
     }
 }

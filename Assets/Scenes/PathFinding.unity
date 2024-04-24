@@ -123,6 +123,64 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &613183553
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 613183555}
+  - component: {fileID: 613183554}
+  m_Layer: 0
+  m_Name: PathFinding
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &613183554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613183553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fd4ff15d5cc08d48b3c091e8baa9e5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileHighlighter: {fileID: 1426803991}
+  mapGenerator: {fileID: 1868863520}
+  tilemap: {fileID: 1734541598}
+  pointTile: {fileID: 11400000, guid: 35e1705788095534bb3c88b2d7f7e506, type: 2}
+  pathTile: {fileID: 11400000, guid: 360f3921542464541a436adaaf79dd4a, type: 2}
+  startPoint:
+    value:
+      x: -1
+      y: -1
+  endPoint:
+    value:
+      x: -1
+      y: -1
+  path: []
+--- !u!4 &613183555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613183553}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 5, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &943261941
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,11 +349,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45247e96b3a07f14c824ad0e224e9ecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mapGenerator: {fileID: 1868863520}
   tilemap: {fileID: 1734541598}
-  offset: {x: 1, y: 1, z: -1}
   defaultTile: {fileID: 11400000, guid: 0c62ab801ee2c2b4d9ab03243f7787b2, type: 2}
   hoverTile: {fileID: 11400000, guid: dde75fe1f10ffaf42af716ac2b4eb180, type: 2}
-  pointTile: {fileID: 11400000, guid: 35e1705788095534bb3c88b2d7f7e506, type: 2}
   hoveredTilePosition:
     value: {x: -1, y: -1, z: -1}
 --- !u!4 &1426803992
@@ -536,7 +593,7 @@ GameObject:
   - component: {fileID: 1868863521}
   - component: {fileID: 1868863520}
   m_Layer: 0
-  m_Name: Map Generator
+  m_Name: MapGenerator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -557,8 +614,10 @@ MonoBehaviour:
   tilemap: {fileID: 1734541598}
   tiles:
   - {fileID: 11400000, guid: 0c62ab801ee2c2b4d9ab03243f7787b2, type: 2}
+  - {fileID: 11400000, guid: 8668d8b948fa79f4795151959513bbc5, type: 2}
   width: 6
   height: 6
+  tileInfoList: []
 --- !u!4 &1868863521
 Transform:
   m_ObjectHideFlags: 0
@@ -583,3 +642,4 @@ SceneRoots:
   - {fileID: 1134589338}
   - {fileID: 1868863521}
   - {fileID: 1426803992}
+  - {fileID: 613183555}

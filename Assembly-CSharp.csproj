@@ -70,6 +70,9 @@
     <Compile Include="Assets\Scripts\Game\System\GameStateManager.cs" />
     <Compile Include="Assets\Scripts\Execise\Dog.cs" />
     <Compile Include="Assets\Scripts\YUGIOH\PlacementSystem.cs" />
+    <Compile Include="Assets\Scripts\PathFinding\AStar.cs" />
+    <Compile Include="Assets\Scripts\PathFinding\JumpPointSearch.cs" />
+    <Compile Include="Assets\Scripts\PathFinding\PathFindingManager.cs" />
     <Compile Include="Assets\Scripts\GridSystem\GridCell.cs" />
     <Compile Include="Assets\Scripts\Game\System\ScreenCollider.cs" />
     <Compile Include="Assets\Simple Scroll-Snap\Examples\Example 6 (3D Shape Selection)\Scripts\Rotator.cs" />
