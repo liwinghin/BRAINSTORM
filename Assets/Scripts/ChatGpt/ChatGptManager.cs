@@ -1,8 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using OpenAI;
-using UnityEditor.PackageManager.Requests;
 using UnityEngine.Events;
 
 public class ChatGptManager : MonoBehaviour

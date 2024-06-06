@@ -116,9 +116,23 @@
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
+-define:MIRROR
+-define:MIRROR_79_OR_NEWER
+-define:MIRROR_81_OR_NEWER
+-define:MIRROR_82_OR_NEWER
+-define:MIRROR_83_OR_NEWER
+-define:MIRROR_84_OR_NEWER
+-define:MIRROR_85_OR_NEWER
+-define:MIRROR_86_OR_NEWER
+-define:MIRROR_89_OR_NEWER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -define:UNITY_EDITOR_ONLY_COMPILATION
+-r:"Assets/Mirror/Plugins/BouncyCastle/BouncyCastle.Cryptography.dll"
+-r:"Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll"
+-r:"Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll"
+-r:"Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll"
+-r:"Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
@@ -345,16 +359,29 @@
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/com.unity.cinemachine.editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/CopyrightNoticeEditor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/CW.Common.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/EncryptionTransportEditor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/kcp2k.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/LeanCommon.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/LeanGUI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/LeanTransition.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/LeanTransition.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/Mirror.Authenticators.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/Mirror.CompilerSymbols.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/Mirror.Components.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/Mirror.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/Mirror.Examples.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/Mirror.Hosting.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/Mirror.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/Mirror.Transports.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/OpenAI.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/OpenAI.Runtime.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/ParrelSync.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/SimpleInspectorAttributes.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/SimpleInspectorAttributesEditor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/SimpleScrollSnap.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/SimpleScrollSnapEditor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/SimpleWebTransport.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/Telepathy.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UniRx.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UniTask.Addressables.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UniTask.DOTween.ref.dll"
